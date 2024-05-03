@@ -1,0 +1,17 @@
+#include<xc.h>
+#include<pic18f458.h>
+void main(void){
+    int choice,a,b,res;
+    TRISD=0;
+    while(1){
+    if(choice==1){
+        res=a*b;
+        PORTD=res;
+    }
+    else{
+        res=a/b;
+        PORTD=res;
+    }
+    }
+    
+}

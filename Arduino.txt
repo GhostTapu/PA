@@ -1,0 +1,24 @@
+// Define switch pin
+const int switchPin = 2;
+
+// Define LED pin
+const int ledPin = 13;
+
+void setup() {
+  // Set LED pin as OUTPUT
+  pinMode(ledPin, OUTPUT);
+  // Set switch pin as INPUT
+  pinMode(switchPin, INPUT_PULLUP); // Use internal pull-up resistor
+}
+
+void loop() {
+  // Read the state of the switch
+  int switchState = digitalRead(switchPin);
+
+  // If the switch is pressed (LOW), turn on the LED; otherwise, turn it off
+  if (switchState == LOW) {
+    digitalWrite(ledPin, HIGH);
+  } else {
+    digitalWrite(ledPin, LOW);
+  }
+}

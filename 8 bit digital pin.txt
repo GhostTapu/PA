@@ -1,0 +1,17 @@
+#include <xc.h>
+
+void main(void) {
+    int a,b,res;
+    TRISD=0;
+    while(1){
+    if(LATA==1){
+        res=a*b;
+        PORTD=res;
+    }
+    else{
+        res=a/b;  
+        PORTD=res;
+    }  
+    }
+
+}

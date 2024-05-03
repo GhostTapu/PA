@@ -1,0 +1,37 @@
+#include <xc.h>
+#include <pic18f458.h>
+
+void main(void) {
+    int arr[3];
+    int i,j;
+    int x ;
+    if (LATA==1){
+        for(i=0;i<3;i++){
+        for (j=0;j<3-i-1;j++)
+            if(arr[j]>arr[j+1]){
+                x=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=x ;
+    
+    
+    
+    }
+        }
+    }
+    else {
+        for(i=0;i<3;i++){
+        for (j=0;j<3-i-1;j++)
+            if(arr[j]<arr[j+1]){
+                x=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=x ;
+    
+    
+    
+    }
+        }
+    }
+        
+    
+    }
+   

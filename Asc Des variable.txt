@@ -1,0 +1,27 @@
+#include<xc.h>
+#include<pic18f458.h>
+void main(void){
+    int arr[4];
+    int i,j;
+    int x,choice;
+    if(choice==1){
+        for(i=0;i<4;i++){
+            for(j=0;j<4-i-1;j++)
+                if(arr[j]>arr[j+1]){
+                x=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=x;
+                }
+        }
+    }
+    else{
+        for(i=0;i<4;i++){
+            for(j=0;j<4-i-1;j++)
+                if(arr[j]<arr[j+1]){
+                    x=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=x;
+                }
+        }
+    }
+}
